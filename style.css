@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "MyCustomFont";
+    src: url("family.TTF") format("truetype");
+}
+
+/* Frosted glass navbar */
+.navbar {
+    background-color: rgba(196, 193, 193, 0.2); /* Darker background */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+
+/* Navbar container */
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navbar logo */
+.navbar .navbar-brand img {
+    width: 120px;
+}
+
+/* Navbar links styling */
+.navbar-nav {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-nav li {
+    margin: 0 15px;
+}
+
+.navbar-nav li a {
+    color: rgb(206, 140, 41) !important; /* Force color to skyblue */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Navbar link hover effect */
+.navbar-nav li a:hover {
+    color: rgb(63, 38, 9) !important; /* Hover color matching skyblue */
+}
+
+/* Mobile navbar toggle */
+.navbar-toggler {
+    border: none;
+}
+
+
+
+/* Mobile navbar style */
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar-nav li {
+        margin: 10px 0;
+    }
+}
+
+/* Smooth scrolling for the whole page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* General body styling */
+body {
+    font-family: "MyCustomFont", serif;
+}
+
+/* Cover background settings */
+.cover {
+    background: url('img/petertop.jpg') no-repeat center center; /* Add your background image */
+    background-size: cover;
+    min-height: 150vh;
+}
+
+/* Header image styling */
+.h1 img {
+    width: 35px;
+    margin-top: -8px;
+}
+
+/* About section background */
+.about {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(img/peterbot.jpg);
+    background-size:contain;
+    background-position: center;
+    background-repeat:initial;
+}
+
+/* Footer styling */
+footer span {
+    color: #eeb22b;
+}
+
+/* Contact form input and textarea styling */
+#contact-form input, #contact-form textarea {
+    color: #e15433;
+    border: 2px solid #eeb22b;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Mobile play button styling */
+.mobPlay {
+    display: none;
+}
+
+/* Responsive styling for screens 760px or smaller */
+@media screen and (max-width: 760px) {
+    /* Hide play button on smaller screens */
+    .play {
+        display: none;
+    }
+
+    /* Show mobile play button on smaller screens */
+    .mobPlay {
+        display: block;
+        margin-left: 20px;
+    }
+    
+    /* Adjust cover content font sizes */
+    .cover-content h1 {
+        font-size: 66px;
+        font-weight: bold;
+        padding-top: 30px;
+    }
+
+    .cover-content h6 {
+        font-size: 15px;
+    }
+}
+
+/*roulette*/
+            
+    
